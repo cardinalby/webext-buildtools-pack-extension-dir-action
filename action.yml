@@ -15,7 +15,7 @@ inputs:
     default: '*.pem|.git|*.crx'
   zipFilePath:
     description: 'Path to save result zip file'
-    required: true
+    required: false
 outputs:
   extensionName:
     description: 'extension name from manifest'
