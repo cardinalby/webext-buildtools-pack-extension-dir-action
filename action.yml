@@ -1,0 +1,30 @@
+name: 'webext-buildtools-pack-extension-dir-action'
+description: 'Reads manifest and packs WebExtension dir to zip'
+author: 'cardinalby'
+inputs:
+  extensionDir:
+    description: 'Path to WebExtension directory'
+    required: true
+  zipGlobPattern:
+    description: 'Include files according to the pattern'
+    required: false
+    default: '**'
+  zipIgnore:
+    description: 'Patterns of files which will be excluded from the zip, separated by |'
+    required: false
+    default: '*.pem|.git|*.crx'
+  zipFilePath:
+    description: 'Path to save result zip file'
+    required: true
+outputs:
+  extensionName:
+    description: 'extension name from manifest'
+  extensionVersion:
+    description: 'extension version from manifest'
+  zipFilePath:
+    description: 'the absolute path to created zip file'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+branding:
+  icon: 'package'
