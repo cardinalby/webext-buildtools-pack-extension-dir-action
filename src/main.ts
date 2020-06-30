@@ -20,6 +20,7 @@ async function runImpl() {
     dirBuilder.setInputDirPath(actionInputs.extensionDir);
     dirBuilder.requireManifest();
     if (actionInputs.zipFilePath) {
+        options.zipOutPath = actionInputs.zipFilePath;
         options.zipOptions = {
             globPattern: actionInputs.zipGlobPattern,
             ignore: actionInputs.zipIgnore
