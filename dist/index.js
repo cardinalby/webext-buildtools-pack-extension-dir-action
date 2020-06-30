@@ -59198,6 +59198,7 @@ const path = __webpack_require__(622);
 const webext_buildtools_utils_1 = __webpack_require__(99);
 const buildResult_1 = __webpack_require__(909);
 const zipPacker_1 = __webpack_require__(906);
+const fs = __webpack_require__(226);
 // noinspection JSUnusedGlobalSymbols
 let DirReaderBuilder = /** @class */ (() => {
     class DirReaderBuilder extends webext_buildtools_utils_1.AbstractSimpleBuilder {
@@ -59246,7 +59247,8 @@ let DirReaderBuilder = /** @class */ (() => {
             if (this._manifestRequired) {
                 const manifestFilePath = path.join(this._inputDirPath, webext_buildtools_utils_1.MANIFEST_FILE_NAME);
                 this._logWrapper.info(`Reading '${manifestFilePath}'...`);
-                const data = webext_buildtools_utils_1.validateManifestFile(manifestFilePath);
+                const manifestContents = await fs.readFile(manifestFilePath);
+                const data = webext_buildtools_utils_1.validateManifestFile(manifestContents);
                 this._logWrapper.info(`Manifest asset added to result`);
                 result.getAssets().manifest = new buildResult_1.ManifestBuildAsset(data);
             }
