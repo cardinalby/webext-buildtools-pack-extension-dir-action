@@ -9793,6 +9793,9 @@ const ghActions = __importStar(__webpack_require__(470));
 const webext_buildtools_dir_reader_mw_1 = __importDefault(__webpack_require__(710));
 const actionInputs_1 = __webpack_require__(638);
 const actionOutputs_1 = __webpack_require__(668);
+process.on('warning', (warning) => {
+    console.log(warning.stack);
+});
 // noinspection JSUnusedLocalSymbols
 function run() {
     return __awaiter(this, void 0, void 0, function* () {
