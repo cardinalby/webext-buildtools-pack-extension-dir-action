@@ -3,6 +3,10 @@ import DirReaderBuilder, { IDirReaderOptions } from 'webext-buildtools-dir-reade
 import { actionInputs } from './actionInputs';
 import { actionOutputs } from './actionOutputs';
 
+process.on('warning', (warning) => {
+    console.log(warning.stack);
+});
+
 // noinspection JSUnusedLocalSymbols
 async function run(): Promise<void> {
     try {
