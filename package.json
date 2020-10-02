@@ -22,7 +22,7 @@
   "author": "cardinalby",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.2.0",
+    "@actions/core": "^1.2.6",
     "github-actions-utils": "^1.0.7",
     "webext-buildtools-dir-reader-mw": "^1.0.16"
   },
