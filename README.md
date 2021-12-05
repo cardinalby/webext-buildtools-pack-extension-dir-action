@@ -26,7 +26,7 @@ Default: `*.pem|.git|*.crx`
 ## Outputs
 * `extensionName` from extension's manifest
 * `extensionVersion` from extension's manifest
-* `zipFilePath` the absolute path to built crx file (if `zipFilePath` input specified)
+* `zipFilePath` the absolute path to the result zip file
 
 ## Example usage
 
