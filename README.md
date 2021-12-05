@@ -34,5 +34,5 @@ Default: `*.pem|.git|*.crx`
 uses: cardinalby/webext-buildtools-pack-extension-dir-action@v1
 with:
   extensionDir: 'extension'
-  crxFilePath: 'build/extension.zip'
+  zipFilePath: 'build/extension.zip'
 ```
