@@ -3,7 +3,10 @@
 # Pack WebExtension directory to zip
 
 The action reads WebExtension's manifest file and packs directory to zip file.
-You can use it to upload as release artifact or to provide inputs for further build steps
+You can use it to upload as release artifact or to provide inputs for further build steps.
+
+If you are interested in the building the entire deployment workflow for WebExtension, 
+you can read this [article](https://dev.to/cardinalby/webextension-deployment-and-publishing-using-github-actions-522o).
 
 Based on [DirReaderBuilder](https://www.npmjs.com/package/webext-buildtools-dir-reader-mw) package.
 
