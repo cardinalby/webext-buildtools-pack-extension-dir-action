@@ -1,4 +1,4 @@
-name: 'webext-buildtools-pack-extension-dir-action'
+name: 'Pack Web Extension dir to zip file'
 description: 'Reads manifest and packs WebExtension dir to zip'
 author: 'cardinalby'
 inputs:

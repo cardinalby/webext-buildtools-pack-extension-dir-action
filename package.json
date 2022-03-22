@@ -1,6 +1,5 @@
 {
   "name": "webext-buildtools-pack-extension-dir-action",
-  "version": "1.0.6",
   "private": false,
   "description": "Reads manifest and packs WebExtension dir to zip",
   "main": "lib/main.js",
